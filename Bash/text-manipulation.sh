@@ -50,7 +50,7 @@ echo "Caesar Cipher: $(for ((i=0; i<${#var1}; i++))
 			var3=$var3$(echo $Char | tr $(printf %${shift}s | tr " " ".")A-Z A-ZA-Z)
 		elif [[ ${Char} == [a-z] ]]
 		then 
-			var3=$var3$(echo $Char | tr $(printf %$1s | tr " " ".")a-z a-za-z)
+			var3=$var3$(echo $Char | tr $(printf %${shift}s | tr " " ".")a-z a-za-z)
 		else
 			var3=${var3}${Char}
 		fi
