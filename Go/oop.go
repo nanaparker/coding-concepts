@@ -27,6 +27,7 @@ func (ftp Wheel) fillPressure(){
 }
 
 
+
 // Engine Class: Check Coolant Level, Refill Coolant Level
 type Engine struct{
 	coolant float32
@@ -49,6 +50,7 @@ func (fcl Engine) fillCoolant(){
 		fmt.Println("No need for refilling Coolant")
 	}
 }
+
 
 
 // Vehicle Class: Check Wheel Stuff, Check Engine Stuff
@@ -80,6 +82,8 @@ func (v *Vehicle) mechanic(){
 	v.back.fillPressure()
 	v.eng.fillCoolant()
 }
+
+
 
 func main(){
 
