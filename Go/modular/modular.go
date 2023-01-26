@@ -2,9 +2,11 @@ package main
 
 import (
 	b "modular/funcs"
+	
+	"fmt"
 )
 
 func main(){
 	// Verifies whether the word is a palindrome
-	b.IsPalin("Chicken")
+	fmt.Println(b.IsPalin("Chicken"))
 }
